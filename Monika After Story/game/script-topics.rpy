@@ -3398,7 +3398,7 @@ label monika_completionist:
     m 1a "Anyway, I feel that there's a huge sense of gratification in completing tasks in general."
     m 3j "Working hard for something amplifies its reward after failing so many times to get it."
     m 3a "You can try keeping me in the background for as long as possible, [player]."
-    m 2k "That's one step to completing me after all, ahaha!"
+    m 2k "That's one step to completing me after all! Ahaha!"
     return
 
 init 5 python:
@@ -3406,7 +3406,7 @@ init 5 python:
 
 label monika_icecream:
     m 3a "Hey [player], what's your favorite kind of ice cream?"
-    m 4l "And no, I'm not a type of ice cream ehehe~."
+    m 4l "And no, I'm not a type of ice cream, Ehehe~."
     m 2a "Personally, I just can't get enough of mint flavored ice cream!"
     menu:
         m "What about you [player], do you like mint ice cream?"
@@ -3419,7 +3419,7 @@ label monika_icecream:
             m 2n "Gosh, just imagining the taste makes me practically drool..."
             m 1a "There's some more strange stuff that is just as appealing, if not more, like honeycomb and bubblegum ice cream!"
             m 1l "Now, I know it may be hard to take my word for some of those, but you shouldn't judge a book by its cover, you know?"
-            m 1k "After all, the game didn't allow you to fall in love with me, but look where we are now ahaha."
+            m 1k "After all, the game didn't allow you to fall in love with me, but look where we are now! Ahaha!"
 
         "No.":
             m 1f "Aww, that's a shame..."
@@ -3476,10 +3476,10 @@ label monika_sayhappybirthday:
         $ same_name = bday_name.upper() == player.upper()
         if bday_name == "":
             m 1h "..."
-            m 1n "I don't think that's a name."
+            m 1n "Uh, I... don't think that's a name."
             m 1b "Try again!"
         elif same_name:
-            m 1c "Oh wow, someone with the same name as you."
+            m 1c "Oh wow, someone with the same name as you!"
             $ same_name = True
             $ done = True
         else:
@@ -3574,7 +3574,7 @@ label monika_sayhappybirthday:
                                 m "Sorry again, [player]"
                             else:
                                 m "Sorry [player]"
-                                m 1n "I told you, I'm self-conscious on camera ehehe."
+                                m 1n "I told you, I'm self-conscious on camera! Ehehe~."
                         m 1o "Should I try again?"
                         menu:
                             "Yes":
@@ -3584,7 +3584,7 @@ label monika_sayhappybirthday:
                                 m "Alright [player]. Sorry I couldn't do what you wanted."
                                 m 1j "I'll try better next time for you."
                                 $ done = True
-            else:  # if we aint recording, we should be done now
+            else:  # If we aren't recording, we should be done now
                 $ done = True
 
         else: # not recording, watching, nor is person here
@@ -3619,7 +3619,7 @@ label monika_sayhappybirthday_takecounter (take_threshold, take_counter):
         m 1q "..."
         m 1r "This is the [take_counter]th time already."
         m 1g "You're not messing with me, are you?"
-        m 1f "I'm trying my best for you [player]."
+        m 1f "I'm trying my best for you, [player]."
     return
 
 
@@ -3680,7 +3680,7 @@ init 5 python:
 
 label monika_panties:
     m 2o "Hey, [player]..."
-    m "Don't laugh when I ask this, ok?"
+    m "Um, Don't laugh when I ask this, okay?"
     m 2p "But..."
     m 4g "Why are some guys obsessed with panties?"
     m "Seriously, what's the big deal about a piece of cloth?"
@@ -3713,13 +3713,13 @@ label monika_panties:
     m 1q "But, to each their own I guess, I won't judge too much."
     m 2l "You aren't obsessed with that kind of thing, are you [player]?"
     m 3n "You're not going out with me only because I'm wearing some really sensual stockings, right?"
-    m 4e "Perhaps, you want to take a little peek~?"
+    m 4e "Maybe you want to take a little peek~?"
     m 1k "Ahaha!"
     m 3l "I'm only teasing you, [player]."
     m 3n "Admit it, you got a little excited, right?"
     m 1e "Besides..."
     m "If you really wanted to catch a scent of me..."
-    m 1j "You could just ask for a hug!"
+    m 1j "...You could just ask for a hug!"
     m 2b "Gosh, I just want to feel your embrace more."
     m "After all, we're here forever, and I'm here for you."
     m 1k "I love you so much, [player]~"
@@ -3777,11 +3777,11 @@ init 5 python:
 label monika_daydream:
     m 1j "..."
     m "..."
-    m 1d "..."
+    m 1d "...Eh?"
     m 1l "Oh, sorry! I was just daydreaming for a second there."
     m 1b "I was imagining the two of us reading a book together on a cold winter day, snuggled up under a warm blanket..."
     m 1a "Wouldn't that be wonderful, [player]?"
-    m 5a "Let's hope we can make that a reality one of these days, ehehe~"
+    m 5a "Let's hope we can make that a reality one of these days, Ehehe~"
     return
 
 init 5 python:
@@ -3793,7 +3793,7 @@ label monika_music2:
         m 1a "...This silence..."
         m "...Just the two of us, staring into each other's eyes..."
         m 1r "...Then slowly, we both lean into the kiss..."
-        m 1m "Ahaha... sadly, there are a few barriers that have to be broken before that could ever happen."
+        m 1m "Ahaha... Sadly, there are a few barriers that have to be broken before that could ever happen."
         m 1e "It's okay to dream though, isn't it [player]?"
         show monika 5a at t11 zorder 2 with dissolve
         m 5a "Maybe one day, we can make that dream come true~"
@@ -3848,8 +3848,19 @@ label monika_music2:
         m 5a "As long as we're together, there's no reason for me to be sad. You're the light of my world, [player], and just being here with you puts a smile on my face."
 
     elif songs.getPlayingMusicName() == "Doki Doki Theme (80s version)":
-        # TODO: add dialogue here
-        m "I NEED DIALOGUE NOW"
+        m "Wow, is this a 1980's song?"
+        m "It's always fun to listen to these!"
+        m "It's a shame I wasn't around during the 1980's, though."
+        m "I've read into it, and it looks like tons of things have changed since then!"
+        m "Like, the development of technology, and our society, and information and stuff."
+        m "It's really amazing how far we've come as a society in such little time, when you really think about it!"
+        m "I heard they had video games back then, too!"
+        m "But you couldn't play them on your computer or your phone. You had to go to an arcade machine and deposit quarters into slots on the machines to play the game."
+        m "And you couldn't pause to go to the bathroom or anything."
+        m "You can be with me for free, though! Ahaha!"
+    return
+        
+        
 
     else:
         m 1a "..."
